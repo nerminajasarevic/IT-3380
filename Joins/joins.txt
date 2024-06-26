@@ -1,0 +1,83 @@
+Nermina Jasarevic
+IT 3380
+Joins in MySQL
+
+1.
+
+JOIN only returns customers who have sales reps, LEFT JOIN returns all customers and RIGHT JOIN returns all sales reps.
+
+JOIN 
+    Results Returned: 100
+    NULL: N/A
+
+LEFT JOIN
+    Results Returned: 122
+    NULL: salesRepEmployeeNumber, firstName, lastName
+
+RIGHT JOIN
+    Results Returned: 108
+    NULL: customerName, customerNumber, salesRepEmployeeNumber
+
+2.
+
+JOIN returns employees who have an office, LEFT JOIN returns all employees, RIGHT JOIN returns all offices. All of these queries return the same results and have no NULL because every employee has an office.
+
+JOIN
+    Results Returned: 23
+    NULL: N/A
+
+LEFT JOIN
+    Results Returned: 23
+    NULL: N/A
+
+RIGHT JOIN
+    Results Returned: 23
+    NULL: N/A
+
+3.
+
+JOIN returns all customers who placed orders, LEFT JOIN returns all customers include those who have not placed orders and RIGHT JOIN returns all orders. I don't really understand why there is an extra result for RIGHT JOIN.
+
+JOIN
+    Results Returned: 2996
+    NULL: N/A
+
+LEFT JOIN
+    Results Returned: 3020
+    NULL: orderNumber, orderDate, productName, quantityOrdered, priceEach
+
+RIGHT JOIN
+    Results Returned: 2997
+    NULL: N/A
+
+4.
+
+JOIN returns all customers who made payments, LEFT JOIN returns all customers and RIGHT JOIN returns all payments.
+
+JOIN
+    Results Returned: 273
+    NULL: N/A
+
+LEFT JOIN
+    Results Returned: 297
+    NULL: paymentDate, checkNumber, amount
+
+RIGHT JOIN
+    Results Returned: 273
+    NULL: N/A
+
+5.
+
+JOIN returns products with a product line, LEFT JOIN returns all products and RIGHT JOIN returns all product lines. These are all the same with no NULL because every product has a product line.
+
+JOIN
+    Results Returned: 110
+    NULL: N/A
+
+LEFT JOIN
+    Results Returned: 110
+    NULL: N/A
+
+RIGHT JOIN
+    Results Returned: 110
+    NULL: N/A
